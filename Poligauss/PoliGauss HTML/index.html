@@ -1,0 +1,67 @@
+<!--
+Desenvolvido por Henrique Felipe
+https://blogcyberini.blogspot.com.br
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>PoliGauss</title>
+    <script type="text/javascript" src="scripts/formata_expression.js"></script>
+    <script type="text/javascript" src="scripts/algoritmo_poligauss.js"></script>
+    <script type="text/javascript" src="scripts/events_actions.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            loadActions();
+            gerarSegundoGrau();
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+</head>
+
+<body>
+    <div id="principal">
+        <h1 class="centraliza bloqueia_selection">PoliGauss</h1>
+        <hr/>
+        <h2 class="centraliza">Que tipo de equação você deseja resolver?</h2>
+        <p class="centraliza">
+            <button type="button" id="eq2">2º Grau</button>
+            <button type="button" id="eq3">3º Grau</button>
+            <button type="button" id="eq4">4º Grau</button>
+            <button type="button" id="eq5">5º Grau</button>
+        </p>
+        <div id="saida_eq" class="centraliza">
+            <p>Resolva a equação abaixo. Se quiser gerar outra equação, clique nos botões acima conforme a sua necessidade.</p>
+            <p id="equacao"></p>
+            <button type="button" id="ver_resposta">Ver Resposta</button>
+        </div>
+        <p id="resposta" class="centraliza"></p>
+        <hr/>
+        <h2 class="centraliza">Dicas e Sugestões</h2>
+        <ul>
+            <li>Nesse aplicativo, nenhuma das raízes das equações geradas são complexas ou irracionais.</li>
+            <li>Em todas as equações geradas, o número de raízes é igual ao grau da equação (incluindo raízes repetidas).</li>
+            <li>Para equações do Segundo Grau, utilize a fórmula de Bhaskara na resolução.</li>
+            <li>Para equações do Terceiro, Quarto e Quinto grau, utilize, preferencialmente, métodos que reduzem o grau da equação. Para isso, você deve conhecer pelo menos uma raíz da equação e deverá dividir a equação por "x-(raiz)". Se essa realmente for uma raiz da equação, a divisão será exata e o quociente dela será uma nova equação de grau reduzido que você deverá resolver.</li>
+            <li>Divisões entre um polinômio e um binômio da forma "x-a", podem ser facilmente resolvidas pelo "Algoritmo/Regra/Dispositivo de Briot-Ruffini".</li>
+            <li>Utilize as "Relações de Girard" para "deduzir" possíveis raízes da equação.</li>
+            <li>Para equações do Terceiro Grau, existe uma fórmula de extração das raízes conhecida como "Fórmula de Cardano" ou "Fórmula de Tartaglia-Cardano".</li>
+            <li>Para equações do Quarto Grau, existe uma fórmula de extração das raízes conhecida como "Fórmula de Ferrari".</li>
+        </ul>
+        <p class="centraliza">Essas são apenas algumas dicas para resolver. Naturalmente, existem diversas formas de resolver uma equação polinomial.</p>
+        <hr/>
+        <h2 class="centraliza">Referências Bibliográficas</h2>
+        <ul>
+            <li>DANTE, Luiz Roberto. Matemática, volume único. 1ª edição. São Paulo: Ática, 2005</li>
+            <li>IEZZI, Gelson. Fundamentos de Matemática Elementar Volume 6 - Complexos, Polinômios, Equações. São Paulo: Atual, 1977</li>
+        </ul>
+        <hr/>
+        <p class="centraliza"><em>Essa página tem como finalidade apenas demonstrar o algoritmo que gera equações sem  se preocupar com layouts ou estilos.</em></p>
+        <p class="centraliza"><strong>Mais informações: <a href="https://blogcyberini.blogspot.com.br/" target="_blank">Blog Cyberini</a> (Blog do desenvolvedor, Henrique Felipe)</strong></p>
+        <div id="rodape">
+            <p class="centraliza">Desenvolvido por Henrique Felipe. Utilize navegadores Chrome, Firefox ou IE10 e superiores.</p>
+        </div>
+    </div>
+</body>
+
+</html>

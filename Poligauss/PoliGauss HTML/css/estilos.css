@@ -1,0 +1,35 @@
+/*
+Desenvolvido por Henrique Felipe
+https://blogcyberini.blogspot.com.br
+*/
+/*
+Folha de estilo da página
+*/
+#principal{
+	margin:0 auto;
+	width:800px;
+	font-family:Verdana, Geneva, sans-serif;
+	border: 1px #000000 dotted;
+}
+
+.centraliza{
+	text-align:center;
+}
+
+.bloqueia_selection{
+	cursor:default;
+}
+
+#resposta{
+	display:none;
+	margin:0 auto;
+}
+#equacao{
+	font-size:36px;
+}
+#rodape{
+	clear:both;
+	width: 100%;
+	font-size:12px;
+	border-top:1px #000000 dotted;
+}

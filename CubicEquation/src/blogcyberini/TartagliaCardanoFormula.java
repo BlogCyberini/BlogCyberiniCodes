@@ -129,7 +129,7 @@ public class TartagliaCardanoFormula {
 		return roots;		
 	}
 	/**
-	 * It formats a complex number (a+bi form).
+	 * It formats a complex number (a+bi form). Float version.
 	 * 
 	 * @param realPart is the real part of the complex number
 	 * @param imPart is the imaginary part of the complex number
@@ -151,7 +151,7 @@ public class TartagliaCardanoFormula {
 		return number;
 	}
 	/**
-	 * It formats a complex number (a+bi form).
+	 * It formats a complex number (a+bi form). Double version.
 	 * 
 	 * @param realPart is the real part of the complex number
 	 * @param imPart is the imaginary part of the complex number

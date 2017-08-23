@@ -95,6 +95,8 @@ function formatComplexResult(realPart, imPart){
 }
 //a test function
 function test(){
+    //PoliGauss Code: https://blogcyberini.blogspot.com/2013/12/poligauss-gerador-de-equacoes.html
+    //it generates a random cubic equation
     var a, s1, s2, s3, x1, x2, x3;
     x1 = 7 - Math.round(Math.random() * 14);
     x2 = 7 - Math.round(Math.random() * 14);
@@ -106,6 +108,8 @@ function test(){
     
     s1 = -a * (x1 + x2 + x3);
     s2 = a * (x1*x2 + x1*x3 + x2*x3);
-    s3 = -a * x1 * x2 * x3;    
+    s3 = -a * x1 * x2 * x3;
+    //print the roots: exact and the computed
     alert(x1+", "+x2+", "+x3+"\n"+solve(a, s1, s2, s3));
-} 
+    //Probably there will be rounding errors...
+}

@@ -11,6 +11,8 @@
  * be zero.
  * 
  * Complex roots are formatted using the following format a+bi.
+ *
+ * ax³+bx²+cx+d = 0
  */
 function solve(a, b, c, d){
     /*

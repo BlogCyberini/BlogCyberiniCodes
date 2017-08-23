@@ -16,7 +16,9 @@ public class TartagliaCardanoFormula {
 	 * be zero.
 	 * 
 	 * Complex roots are formatted using the following format a+bi.
-	 * 
+	 *
+	 * Equation form: ax³+bx²+cx+d = 0
+	 *
 	 * The calculations use <code>double</code> numbers.
 	 * 
 	 * @param a coefficient

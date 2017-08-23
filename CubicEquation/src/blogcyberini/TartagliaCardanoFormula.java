@@ -98,8 +98,7 @@ public class TartagliaCardanoFormula {
 	public static void main(String[] args){
 		//PoliGauss Code: https://blogcyberini.blogspot.com/2013/12/poligauss-gerador-de-equacoes.html
 		java.util.Random  rnd = new java.util.Random();
-		//it generates a random cubic equation
-		int[] resp = new int[7];
+		//it generates a random cubic equation		
 		int a, s1, s2, s3, x1, x2, x3;
 
 		x1 = 7 - rnd.nextInt(15);
@@ -114,13 +113,6 @@ public class TartagliaCardanoFormula {
 		s2 = a * (x1 * x2 + x1 * x3 + x2 * x3);
 		s3 = -a * x1 * x2 * x3;
 
-		resp[0] = a;
-		resp[1] = s1;
-		resp[2] = s2;
-		resp[3] = s3;
-		resp[4] = x1;
-		resp[5] = x2;
-		resp[6] = x3;
 		//print the roots
 		System.out.println(x1+", "+x2+", "+x3);
 		//print the roots computed by solveEquation(a,b,c,d)

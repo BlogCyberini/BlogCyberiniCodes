@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+Code by Henrique Felipe (GitHub: HenriqueIni)
+https://blogcyberini.blogspot.com/
+
+This code is under MIT License
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tartaglia-Cardano Formula</title>
+        <script type="text/javascript" src="js/TartagliaCardanoFormula.js"></script>
+        <script>
+            //a test function
+            function test(){
+                //PoliGauss Code: https://blogcyberini.blogspot.com/2013/12/poligauss-gerador-de-equacoes.html
+                //it generates a random cubic equation
+                var a, s1, s2, s3, x1, x2, x3, exactRoots, computedRoots;
+                x1 = 7 - Math.round(Math.random() * 14);
+                x2 = 7 - Math.round(Math.random() * 14);
+                x3 = 7 - Math.round(Math.random() * 14);
+                
+                do{
+                    a = 3 - Math.round(Math.random() * 6);
+                }while(a == 0);
+                
+                exactRoots = [x1, x2, x3].sort();
+                s1 = -a * (x1 + x2 + x3);
+                s2 = a * (x1*x2 + x1*x3 + x2*x3);
+                s3 = -a * x1 * x2 * x3;
+                computedRoots = solve(a, s1, s2, s3).sort();
+                document.getElementById("coefficient").innerHTML = a +", "+ s1+ ", " + s2 + ", " + s3;
+                document.getElementById("exactRoots").innerHTML = exactRoots.toString();
+                document.getElementById("computedRoots").innerHTML = computedRoots.toString();
+                //Probably there will be rounding errors...
+            }            
+        </script>
+        <style>
+            .center{
+                width: 800px;
+                margin: 0 auto;
+            }
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body onload="test()">
+        <article class="center">
+            <h1>Test: Tartaglia-Cardano Formula</h1>
+            <p>It generates a random 3rd degree equation and solve it using Tartaglia-Cardano formula.</p>            
+            <p>It also shows the exact roots to compare with the computed roots.</p>
+            <p>The computed roots can have rounding errors because of the representation of the numbers in floating point.</p>
+            <p>The equation has the form: ax&sup3; + bx&sup2; + cx + d = 0, a &ne; 0.</p>
+            <p>Click on the button "Test it!" to generate another equation.</p>            
+            <hr>
+            <p><strong>Equation coefficients (a, b, c, d):</strong> <span id="coefficient"></span></p>
+            <p><strong>Exact roots:</strong> <span id="exactRoots"></span></p>
+            <p><strong>Computed roots:</strong> <span id="computedRoots"></span></p>
+            <p><small>If the exact root is real, but the formula computed a complex root, it's because of the rounding errors. However, the imaginary part of the "complex" root will be very close of zero.</small></p>
+            <button type="button" onclick="test()">Test it!</button>
+            <hr>
+            <p>Access the Blog Cyberini for more: <a href="https://blogcyberini.blogspot.com/" target="_blank">Blog Cyberini</a>.</p>            
+        </article>
+    </body>
+</html>

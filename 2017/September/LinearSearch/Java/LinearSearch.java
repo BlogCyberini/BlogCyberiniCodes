@@ -12,10 +12,10 @@ public class LinearSearch {
     public static int linearSearch(Object[] a, Object key){
         for(int i = 0; i < a.length; i++){
             if(a[i].equals(key)){
-                return i;
+                return i; //the value was found, return the index
             }
         }
-        return -1;
+        return -1; //the value wasn't found
     }
     /**
      * Search the value <code>key</code> in the vector <code>a</code>.
@@ -26,10 +26,10 @@ public class LinearSearch {
     public static int linearSearch(int[] a, int key){
         for(int i = 0; i < a.length; i++){
             if(a[i] == key){
-                return i;
+                return i; //the value was found, return the index
             }
         }
-        return -1;
+        return -1; //the value wasn't found
     }
     /*
      * Teste codes     

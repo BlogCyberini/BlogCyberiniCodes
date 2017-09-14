@@ -16,10 +16,10 @@ int linearSearch(int a[], int size, int key) {
     int i;
     for (i = 0; i < size; i++) {
         if (a[i] == key) {
-            return i;
+            return i; //the value was found, return the index
         }
     }
-    return -1;
+    return -1; //the value wasn't found
 }
 /*
  * Test codes

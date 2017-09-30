@@ -16,7 +16,7 @@ public class PowerBySquaringRecursive {
     //This method computes x^n, since x and n are valid parameters
     private static double potQuadAlg(double x, int n){
         //base case
-        if(n == 0) return x;
+        if(n == 0) return 1;
         if(n % 2 == 0){//n is even
             double p = potQuadAlg(x, n/2);
             return p * p;
@@ -42,7 +42,7 @@ public class PowerBySquaringRecursive {
     //This method computes x^n, since x and n are valid parameters
     private static double potQuadAlgOpt(double x, int n){
         //base case
-        if(n == 0) return x;
+        if(n == 0) return 1;
         double p = potQuadAlgOpt(x, n >> 1);
         if((n & 1) == 0){//n is even            
             return p * p;
@@ -50,4 +50,10 @@ public class PowerBySquaringRecursive {
             return x * p * p;
         }
     }
+    //Tests
+    public static void main(String[] a){        
+        System.out.println("potQuad(2, 300) = " + potQuad(2, 300));
+        System.out.println("potQuadOpt(2, 300) = " + potQuadOpt(2, 300));
+        System.out.println("Math.pow(2, 300) = " + Math.pow(2, 300));
+    }   
 }

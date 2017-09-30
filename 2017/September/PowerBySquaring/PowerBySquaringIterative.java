@@ -43,4 +43,10 @@ public class PowerBySquaringIterative {
         }
         return p;
     }
+    //Tests
+    public static void main(String[] a){        
+        System.out.println("potQuadIter(2, 300) = " + potQuadIter(2, 300));
+        System.out.println("potQuadIterOpt(2, 300) = " + potQuadIter(2, 300));
+        System.out.println("Math.pow(2, 300) = " + Math.pow(2, 300));
+    }
 }

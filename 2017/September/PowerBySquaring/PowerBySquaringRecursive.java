@@ -1,6 +1,5 @@
 //Code by Henrique Felipe (GitHub: HenriqueIni)
-public class PowerBySquaringRecursive {
-    
+public class PowerBySquaringRecursive {    
     //NORMAL VERSION WITHOUT OPTIMIZATIONS
     //x is the base, n is the expoent. This method just do validations.
     public static double potQuad(double x, int n){

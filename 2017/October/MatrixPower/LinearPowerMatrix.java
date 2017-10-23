@@ -1,7 +1,7 @@
 //Code by Henrique Felipe (GitHub: HenriqueIni)
 //The code works only for nonnegative expoent
 public class LinearPowerMatrix {    
-    //Computes A to the n. The matrix needs to a square matrix
+    //Computes A to the n. The matrix needs to be a square matrix
     //Linear algorithm
     public static double[][] powLinear(double A[][], int n){
         if(n < 0){

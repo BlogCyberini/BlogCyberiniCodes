@@ -2,7 +2,7 @@
 //The code works only for nonnegative expoent
 public class SqrPowerMatrix {
     //Computes A to the n. The matrix needs to a square matrix
-    //Exponentiation by squaring
+    //Exponentiation by squaring (logarithmic algorithm)
     public static double[][] powQuad(double A[][], int n) {
         if (n < 0) throw new IllegalArgumentException("n < 0");
         if(n == 0) return I(A.length);

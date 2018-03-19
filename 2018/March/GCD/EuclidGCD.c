@@ -7,7 +7,7 @@ int gcdRecursive(int a, int b){
     if(b == 0) return a;
     return gcdRecursive(b, a % b);
 }
-//Euclid's algorithm (recursive)
+//Euclid's algorithm (iterative)
 int gcdIterative(int a, int b){
     while(b != 0){
         int r = a % b;

@@ -1,0 +1,3 @@
+<h1>Implementations of the Euclid's Algorithm</h1>
+<p>Euclid's Algorithm to compute the greatest common divisor (GCD). Implementations in <a href="https://github.com/HenriqueIni/BlogCyberiniCodes/blob/master/2018/March/GCD/EuclidGCD.java">Java</a>, <a href="https://github.com/HenriqueIni/BlogCyberiniCodes/blob/master/2018/March/GCD/EuclidGCD.c">C</a> and <a href="https://github.com/HenriqueIni/BlogCyberiniCodes/blob/master/2018/March/GCD/EuclidGCD.js">JavaScript</a>.</p>
+<p>More (PT-BR): <a href="https://www.blogcyberini.com/2018/03/algoritmo-de-euclides-implementacoes-e.html">Algoritmo de Euclides: implementações e aplicações do MDC</a></p>

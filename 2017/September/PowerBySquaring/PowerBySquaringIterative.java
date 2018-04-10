@@ -32,7 +32,7 @@ public class PowerBySquaringIterative {
         if(x == 0)
             return 0;
         if(n < 0)
-            return potQuadIter(1/x, -n);
+            return potQuadIterOpt(1/x, -n);
         
         double p = 1;
         while(n > 0){

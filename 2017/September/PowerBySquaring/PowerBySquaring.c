@@ -24,7 +24,7 @@ double potQuad(double x, int n) {
 //This method computes x^n, since x and n are valid parameters
 double potQuadAlgOpt(double x, int n) {    
     if(n < 0)
-        return potQuad(1/x, -n);
+        return potQuadAlgOpt(1/x, -n);
     //base case
     if (n == 0) return 1;
     double p = potQuadAlgOpt(x, n >> 1);

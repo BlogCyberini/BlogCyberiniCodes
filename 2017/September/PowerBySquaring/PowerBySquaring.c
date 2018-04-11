@@ -57,7 +57,7 @@ double potQuadIter(double x, int n) {
 //x and n need to be valid
 double potQuadIterOpt(double x, int n) {
     if (n < 0)
-        return potQuadIter(1 / x, -n);
+        return potQuadIterOpt(1 / x, -n);
 
     double p = 1;
     while (n > 0) {

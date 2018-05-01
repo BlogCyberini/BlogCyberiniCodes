@@ -15,7 +15,7 @@ double pi(int iterations){
     
     int i;    
     for(i = 0; i < iterations; i++){
-        //it the constants of the i-th iteration
+        //it computes the constants of the i-th iteration
         a_next = (a + b)/2;
         b_next = sqrt(a * b);
         aux = a - a_next; //it avoids pow(a, 2)

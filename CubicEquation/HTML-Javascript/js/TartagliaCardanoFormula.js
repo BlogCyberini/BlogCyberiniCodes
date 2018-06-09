@@ -15,21 +15,6 @@
  * Equation form: ax³+bx²+cx+d = 0
  */
 function solve(a, b, c, d){
-    /*
-     * Validate the coefficients     
-     */
-    if(!(a instanceof Number)){
-        throw "a coefficient isn't a number!";
-    }
-    if(!(b instanceof Number)){
-        throw "b coefficient isn't a number!";
-    }
-    if(!(c instanceof Number)){
-        throw "c coefficient isn't a number!";
-    }
-    if(!(d instanceof Number)){
-        throw "d coefficient isn't a number!";
-    }
     if(a == 0){
         throw "the coefficient a can't be zero!";
     }
@@ -76,9 +61,6 @@ function solve(a, b, c, d){
 
 //It formats a complex number (a+bi form)
 function formatComplexResult(realPart, imPart){
-    //validations
-    if(!(realPart instanceof Number)){throw "realPart must be a Number!";}
-    if(!(imPart instanceof Number)){throw "imPart must be a Number!";}
     //a simple case
     if(realPart == 0 && imPart == 0) return "0";
     
